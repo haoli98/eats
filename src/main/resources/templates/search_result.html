@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" cellpadding="10" align="center">
+		<tr>
+			<th> Name </th>
+			<th> Address </th>
+			<th> Rating </th>
+			<th> Price </th>
+			<th> Distance </th>
+		</tr>
+		<tr th:each="restaurant : ${restaurants}">
+			<td th:text="${restaurant.name}">Name</td>
+			<td th:text="${restaurant.address}">Address</td>
+			<td th:text="${restaurant.rating}">Rating</td>
+			<td th:text="${restaurant.price}">Price</td>
+			<td th:text="${restaurant.distance}">Distance</td>
+		</tr>
+	</table>
+</body>
+</html>

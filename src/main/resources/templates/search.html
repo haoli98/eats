@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>WZ Eats</title>
+</head>
+<body>
+	<form action = "#" th:action="@{/search}" th:object="${categories}" method="post">
+	<div th:each="category : ${categories}">
+		<label for="category" th:text="${category}"> </label>
+	 	<input name="category" type="radio" th:value="${category}" id="category"/>
+	</div>
+		 <input type="text" name = "location" placeholder="Enter location">
+		<input type="submit" value ="Search"> 
+	</form>
+</body>
+</html>

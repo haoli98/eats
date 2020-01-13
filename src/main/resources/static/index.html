@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WZ Eats</title>
+<body>
+	<h1 align="center">WZ Eats</h1>
+	<a href= "/search"> Click here to find local eats! </a>
+	
+	<p id="demo"></p>
+	<button onclick="getLocation()">Get Current Location</button>
+	<!----
+	<script>
+	var x = document.getElementById("demo");
+
+	function getLocation() {
+	  if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(showPosition);
+	  } else { 
+		 //console.log("not supported by brwoser");
+	    x.innerHTML = "Geolocation is not supported by this browser.";
+	  }
+	}
+	
+	function showPosition(position) {
+		  x.innerHTML = "Latitude: " + position.coords.latitude + 
+		  "<br>Longitude: " + position.coords.longitude;
+	  //latitude.innerHTML = "Latitude: " + position.coords.latitude;
+	  //longitude.innerHTML = "Longitude: " + position.coords.longitude;
+	}
+	</script>
+	---->
+</body>
+</html>
